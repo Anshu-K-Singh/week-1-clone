@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week-1 clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> <!-- New responsive CSS file -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="box">
+            <div class="nav-close-icon" onclick="removeManu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#ff0a2f" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></div>
+          
+            <a href="#about" class="box-link"> About</a>
+            <a href="#services" class="box-link">Services</a>
+            <a href="#projects" class="box-link">Projects</a>
+            <a href="#contact" class="box-link">
+                   contact
+                </a>
+            
+        </div>
+        <nav>
+            <div class="logo">sunnyside</div>
+            <ul>
+                <li><a href="#about" class="link"> About</a></li>
+                <li><a href="#services" class="link">Services</a></li>
+                <li><a href="#projects" class="link">Projects</a></li>
+                <li><a href="#contact" class="button">contact</a></li>
+                
+            </ul>
+            
+            <div><img src="icon-hamburger.svg" alt="" class="nav-icon" onclick="addMenu()"></div>
+           
+        </nav>
+        <h1>WE ARE CREATIVES</h1>
+        <div class="arrow">
+            <svg width="36" height="114" xmlns="http://www.w3.org/2000/svg"><g stroke="#FFF" stroke-width="6" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M18 3v100M3 95.484l15 15 15-15"/></g></svg>
+        </div>
+       
+       
+    </header>
+
+    <main>
+        <section class="section-1">
+            <div class="section-1-content">
+                <h1>Transform your brand</h1>
+                <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a class="learn-more-1">Learn more</a>
+            </div>
+            <div class="section-1-image">
+                  <img src="desktop/image-transform.jpg" alt="">
+            </div>
+        </section>  
+
+        <section class="section-1">
+            <div class="section-1-image">
+                <img src="desktop/image-stand-out.jpg" alt="">
+          </div>
+            <div class="section-1-content">
+                <h1>Stand out to the right audience</h1>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+            <a class="learn-more-2">Learn more</a>
+            </div>
+        </section>
+      
+        <section class="services">
+            <div class="service-1">
+                <div class="service-1-content">
+                  <h3>Graphic Design</h3>
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </div>
+               
+            </div>
+            <div class="service-2">
+                <div class="service-2-content">
+                   <h3>Photography</h3>
+                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <h1>Client Testimonials</h1>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="image-emily.jpg" alt="" id="testimonial-img">
+                    <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                    <h4>Emily R. <span>Marketing Director</span></h4>
+                  
+                </div>
+                <div class="testimonial">
+                    <img src="image-thomas.jpg" alt="">
+                    <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
+                    <h4>Thomas S. <span>Chief Operating Officer</span></h4>
+                </div>
+                <div class="testimonial">
+                    <img src="image-jennie.jpg" alt="">
+                    <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                    <h4>Jennie F. <span>Business Owner</span></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-cards">
+            <div class="card" id="card-1">
+                <!-- <img src="/images/desktop/image-gallery-milkbottles.jpg" alt=""> -->
+            </div>
+            <div class="card" id="card-2">
+                <!-- <img src="/images/desktop/image-gallery-orange.jpg" alt=""> -->
+            </div>
+            <div class="card" id="card-3">
+                <!-- <img src="/images/desktop/image-gallery-cone.jpg" alt=""> -->
+            </div>
+            <div class="card" id="card-4">
+                <!-- <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt=""> -->
+            </div>
+        </div>
+        <div class="footer-logo">
+            <a href="#">sunnyside</a>
+            <ul class="links">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#services" >Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <ul class="socials">
+                <li>
+                    <a href="/">
+                      <i class="fab fa-facebook-f icon"></i>    </a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter icon"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest icon"></i></a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
+
+    <script>
+    
+        function addMenu() {
+            const box = document.querySelector('.box');
+            box.classList.add('active');
+        }
+        function removeManu()
+        {
+            const box = document.querySelector('.box');
+            box.classList.remove('active');
+        }
+    </script>
+
+</body>
+</html>
